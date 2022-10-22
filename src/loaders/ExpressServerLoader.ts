@@ -7,7 +7,7 @@ export function ExpressServerLoader(): Application {
   const expressApp: Application = createExpressServer({
     cors: true,
     classTransformer: true,
-    defaultErrorHandler: false,
+    defaultErrorHandler: true,
     middlewares: [],
     controllers: Object.values(Controllers),
   });
